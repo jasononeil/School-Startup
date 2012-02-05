@@ -31,11 +31,10 @@ pwsAppDir = home + "/.pws/"
 
 # Launch commands depending on the platform...
 if sys.platform == "linux2":
+	runCommand("./update.sh " + pwsAppDir + "School-Startup")
 	runCommand("./update.sh " + pwsAppDir + "School-Logon")
-	#runCommand("dolphin .");
-	#runCommand("git pull");
 elif sys.platform == "win32": 
 	pass
 elif sys.platform == "darwin":
-	runCommand("open .");
-	runCommand("git pull");
+	runCommand("./update.sh " + pwsAppDir + "School-Startup")
+	runCommand("./update.sh " + pwsAppDir + "School-Logon")
