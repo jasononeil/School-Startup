@@ -6,7 +6,7 @@
 HOSTIP='192.168.0.1'
 PORT='3128'
 
-if nc -zv -w10 $HOSTIP $PORT
+if nc -zv -w 3 $HOSTIP $PORT
 then
 # Set the proxy
 export http_proxy=http://$HOSTIP:$PORT
