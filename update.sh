@@ -7,7 +7,7 @@ HOSTIP='192.168.0.1'
 PORT='3128'
 
 # If host is up
-ping -c 1 -t 1 192.168.1.1 > /dev/null 2> /dev/null  # ping and discard output
+ping -c 1 -t 1 $HOSTIP > /dev/null 2> /dev/null  # ping and discard output
 if [ $? -eq 0 ]; then  # check the exit code
     # And If host has port open
     if nc -zv -w 3 $HOSTIP $PORT; then
