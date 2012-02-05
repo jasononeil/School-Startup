@@ -38,4 +38,3 @@ elif sys.platform == "win32":
 elif sys.platform == "darwin":
 	runCommand("./update.sh " + pwsAppDir + "School-Startup")
 	runCommand("./update.sh " + pwsAppDir + "School-Logon")
-	runCommand("open " + pwsAppDir)
