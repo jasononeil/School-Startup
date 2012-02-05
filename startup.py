@@ -36,5 +36,6 @@ if sys.platform == "linux2":
 elif sys.platform == "win32": 
 	pass
 elif sys.platform == "darwin":
+	runCommand("open " + pwsAppDir)
 	runCommand("./update.sh " + pwsAppDir + "School-Startup")
 	runCommand("./update.sh " + pwsAppDir + "School-Logon")
